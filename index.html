@@ -1,16 +1,37 @@
-
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>الهندسية للتكييفات | صيانة وتأسيس جميع أنواع التكييف</title>
+<title>الهندسية للتكييفات | صيانة وتأسيس جميع أنواع التكييفات</title>
 
-<meta name="description" content="الهندسية للتكييفات - صيانة تكييفات، شحن فريون، فك وتركيب، غسيل كيميكال، تأسيس تكييفات في القاهرة والجيزة والقاهرة الجديدة بأفضل جودة وسرعة.">
+<meta name="description" content="الهندسية للتكييفات - صيانة تكييفات - شحن فريون - تأسيس مواسير - فك وتركيب - غسيل كيميكال - خدمة سريعة في القاهرة والجيزة والقاهرة الجديدة.">
 
-<meta name="keywords" content="صيانة تكييف, شحن فريون, تأسيس تكييف, فك وتركيب تكييف, تكييف القاهرة, تكييف الجيزة">
+<meta name="keywords" content="
+صيانة تكييف,
+فني تكييف,
+تأسيس مواسير تكييف,
+فك وتركيب تكييف,
+شحن فريون,
+غسيل كيميكال,
+صيانة تكييف القاهرة,
+صيانة تكييف الجيزة,
+تكييف القاهرة الجديدة,
+أفضل شركة تكييف,
+تنظيف تكييف,
+صيانة شارب,
+صيانة كاريير,
+شركة تكييفات,
+تركيب تكييف
+">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="الهندسية للتكييفات">
+<meta property="og:description" content="أفضل خدمات صيانة وتأسيس التكييفات في القاهرة والجيزة">
+<meta property="og:type" content="website">
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
 
@@ -20,52 +41,68 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
 font-family:'Cairo',sans-serif;
-background:#f4f7fb;
+background:#f5f7fb;
 color:#111;
-line-height:1.7;
+overflow-x:hidden;
 }
 
 header{
-background:linear-gradient(135deg,#041b3a,#0b63ce,#00b3ff);
-color:white;
-padding:90px 20px;
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1581092160607-ee22731c2f5c');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
+padding:30px;
+color:white;
 }
 
-header h1{
-font-size:48px;
+.hero{
+max-width:1000px;
+animation:fade 1.5s ease;
+}
+
+.hero h1{
+font-size:65px;
 font-weight:900;
-margin-bottom:15px;
+margin-bottom:20px;
+line-height:1.3;
 }
 
-header p{
-font-size:20px;
-max-width:850px;
-margin:auto;
-opacity:.95;
+.hero p{
+font-size:24px;
+line-height:2;
+margin-bottom:35px;
 }
 
-.hero-buttons{
-margin-top:30px;
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:15px 28px;
-margin:8px;
-border-radius:14px;
-text-decoration:none;
+padding:18px 34px;
+border-radius:16px;
+font-size:19px;
 font-weight:bold;
+text-decoration:none;
 transition:.3s;
-font-size:17px;
+display:inline-block;
 }
 
 .btn:hover{
-transform:translateY(-3px);
+transform:translateY(-5px);
 }
 
 .whatsapp{
@@ -79,47 +116,47 @@ color:#041b3a;
 }
 
 section{
-padding:80px 20px;
-max-width:1200px;
+padding:90px 20px;
+max-width:1300px;
 margin:auto;
 }
 
 .title{
 text-align:center;
-font-size:38px;
+font-size:48px;
+margin-bottom:60px;
 font-weight:900;
-margin-bottom:50px;
 color:#041b3a;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:22px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 
 .card{
 background:white;
-padding:28px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+padding:35px;
+border-radius:24px;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+transition:.4s;
 text-align:center;
-transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 }
 
 .card h3{
-margin-top:12px;
-font-size:22px;
+font-size:28px;
+margin:18px 0;
 }
 
 .card p{
-margin-top:10px;
-font-size:15px;
+font-size:17px;
 color:#555;
+line-height:1.8;
 }
 
 .card a{
@@ -129,63 +166,93 @@ color:#111;
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
 }
 
 .gallery img{
 width:100%;
-height:240px;
+height:280px;
 object-fit:cover;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
+border-radius:24px;
+box-shadow:0 12px 30px rgba(0,0,0,.12);
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
 }
 
 .features{
 background:white;
-border-radius:20px;
-padding:50px 25px;
+padding:50px;
+border-radius:24px;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
 .features ul{
 list-style:none;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:20px;
 }
 
 .features li{
 background:#f5f7fb;
-padding:18px;
-border-radius:14px;
+padding:22px;
+border-radius:16px;
+font-size:18px;
 font-weight:bold;
 }
 
+.reviews{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.review{
+background:white;
+padding:30px;
+border-radius:22px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.review h4{
+margin-bottom:10px;
+font-size:22px;
+}
+
+.review p{
+line-height:1.9;
+color:#444;
+}
+
 .cta{
-background:#041b3a;
-color:white;
-text-align:center;
+background:linear-gradient(135deg,#041b3a,#0b63ce);
 padding:90px 20px;
-border-radius:24px;
+text-align:center;
+border-radius:28px;
+color:white;
 }
 
 .cta h2{
-font-size:40px;
-margin-bottom:15px;
+font-size:52px;
+margin-bottom:20px;
 }
 
 .cta p{
-font-size:18px;
-margin-bottom:25px;
+font-size:22px;
+margin-bottom:35px;
 }
 
 footer{
 background:#111;
 color:white;
 text-align:center;
-padding:30px 20px;
-margin-top:50px;
+padding:40px 20px;
+margin-top:60px;
+font-size:18px;
 }
 
 .float{
@@ -194,56 +261,90 @@ bottom:20px;
 left:20px;
 background:#25D366;
 color:white;
-padding:16px 20px;
+padding:18px 22px;
 border-radius:50px;
+font-size:18px;
 font-weight:bold;
 text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
+box-shadow:0 5px 25px rgba(0,0,0,.3);
 z-index:999;
 }
 
-@media(max-width:700px){
+@keyframes fade{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
 
-header h1{
-font-size:36px;
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:20px;
 }
 
 .title{
-font-size:30px;
+font-size:36px;
 }
 
 .cta h2{
-font-size:32px;
+font-size:38px;
+}
+
+.gallery img{
+height:240px;
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
-<a class="float" href="https://wa.me/201280288766?text=السلام عليكم اريد طلب خدمة تكييف">واتساب</a>
-
-<header>
-
-<h1>الهندسية للتكييفات</h1>
-
-<p>
-صيانة - تأسيس - شحن فريون - فك وتركيب - غسيل كيميكال لجميع أنواع التكييفات
-في القاهرة والجيزة والقاهرة الجديدة بأعلى جودة وسرعة وضمان حقيقي.
-</p>
-
-<div class="hero-buttons">
-
-<a class="btn whatsapp"
+<a class="float"
 href="https://wa.me/201280288766?text=السلام عليكم اريد الاستفسار عن خدمات التكييف">
 واتساب مباشر
 </a>
 
-<a class="btn call" href="tel:01280288766">
+<header>
+
+<div class="hero">
+
+<h1>
+الهندسية للتكييفات
+</h1>
+
+<p>
+
+صيانة التكييفات - تأسيس مواسير التكييف -
+فك وتركيب - شحن فريون - غسيل كيميكال -
+خدمة احترافية سريعة في القاهرة والجيزة والقاهرة الجديدة.
+
+</p>
+
+<div class="buttons">
+
+<a class="btn whatsapp"
+href="https://wa.me/201280288766?text=السلام عليكم اريد طلب خدمة تكييف">
+احجز عبر واتساب
+</a>
+
+<a class="btn call"
+href="tel:01280288766">
 اتصل الآن
 </a>
+
+</div>
 
 </div>
 
@@ -251,49 +352,63 @@ href="https://wa.me/201280288766?text=السلام عليكم اريد الاس�
 
 <section>
 
-<h2 class="title">خدماتنا</h2>
+<h2 class="title">
+خدماتنا
+</h2>
 
 <div class="grid">
 
 <div class="card">
-<a href="https://wa.me/201280288766?text=أريد خدمة صيانة تكييف">
+<a href="https://wa.me/201280288766?text=اريد خدمة صيانة تكييف">
 <h3>❄️ صيانة تكييف</h3>
-<p>كشف أعطال وصيانة احترافية لجميع الأنواع.</p>
+<p>
+صيانة احترافية وكشف أعطال لجميع أنواع التكييفات.
+</p>
 </a>
 </div>
 
 <div class="card">
-<a href="https://wa.me/201280288766?text=أريد خدمة شحن فريون">
+<a href="https://wa.me/201280288766?text=اريد خدمة تأسيس مواسير التكييف">
+<h3>🛠️ تأسيس مواسير</h3>
+<p>
+تأسيس كامل للمواسير والوحدات بأعلى جودة.
+</p>
+</a>
+</div>
+
+<div class="card">
+<a href="https://wa.me/201280288766?text=اريد خدمة شحن فريون">
 <h3>🧊 شحن فريون</h3>
-<p>شحن فريون بأجهزة دقيقة وتبريد قوي.</p>
+<p>
+شحن فريون بدقة عالية لتحسين قوة التبريد.
+</p>
 </a>
 </div>
 
 <div class="card">
-<a href="https://wa.me/201280288766?text=أريد خدمة فك وتركيب">
-<h3>🛠️ فك وتركيب</h3>
-<p>فك وتركيب بأمان كامل وضمان على الخدمة.</p>
+<a href="https://wa.me/201280288766?text=اريد خدمة فك وتركيب تكييف">
+<h3>🏢 فك وتركيب</h3>
+<p>
+فك وتركيب احترافي وضمان على الخدمة.
+</p>
 </a>
 </div>
 
 <div class="card">
-<a href="https://wa.me/201280288766?text=أريد خدمة غسيل كيميكال">
+<a href="https://wa.me/201280288766?text=اريد خدمة غسيل كيميكال">
 <h3>💨 غسيل كيميكال</h3>
-<p>تنظيف شامل لتحسين كفاءة التبريد.</p>
+<p>
+تنظيف شامل للتكييف وتحسين كفاءة التشغيل.
+</p>
 </a>
 </div>
 
 <div class="card">
-<a href="https://wa.me/201280288766?text=أريد خدمة تأسيس تكييف">
-<h3>🏢 تأسيس تكييف</h3>
-<p>تأسيس احترافي للمواسير والوحدات.</p>
-</a>
-</div>
-
-<div class="card">
-<a href="https://wa.me/201280288766?text=أريد خدمة صيانة شركات">
+<a href="https://wa.me/201280288766?text=اريد صيانة شركات">
 <h3>🏬 صيانة شركات</h3>
-<p>عقود صيانة دورية للشركات والمكاتب.</p>
+<p>
+عقود صيانة دورية للشركات والمكاتب والمحلات.
+</p>
 </a>
 </div>
 
@@ -303,7 +418,9 @@ href="https://wa.me/201280288766?text=السلام عليكم اريد الاس�
 
 <section>
 
-<h2 class="title">بعض أعمالنا</h2>
+<h2 class="title">
+بعض أعمالنا
+</h2>
 
 <div class="gallery">
 
@@ -319,21 +436,23 @@ href="https://wa.me/201280288766?text=السلام عليكم اريد الاس�
 
 <section>
 
-<h2 class="title">لماذا نحن؟</h2>
+<h2 class="title">
+لماذا نحن؟
+</h2>
 
 <div class="features">
 
 <ul>
 
-<li>✅ خدمة سريعة خلال دقائق</li>
+<li>✅ سرعة استجابة وخدمة خلال دقائق</li>
 
-<li>✅ فنيين محترفين وخبرة كبيرة</li>
+<li>✅ خبرة قوية في جميع أنواع التكييفات</li>
 
-<li>✅ أسعار مناسبة وضمان حقيقي</li>
+<li>✅ ضمان على الخدمات والصيانة</li>
 
-<li>✅ صيانة جميع الماركات</li>
+<li>✅ أسعار مناسبة وجودة عالية</li>
 
-<li>✅ خدمة في القاهرة والجيزة والقاهرة الجديدة</li>
+<li>✅ خدمة القاهرة والجيزة والقاهرة الجديدة</li>
 
 <li>✅ دعم واتساب مباشر وسريع</li>
 
@@ -343,17 +462,56 @@ href="https://wa.me/201280288766?text=السلام عليكم اريد الاس�
 
 </section>
 
+<section>
+
+<h2 class="title">
+آراء العملاء
+</h2>
+
+<div class="reviews">
+
+<div class="review">
+<h4>⭐⭐⭐⭐⭐</h4>
+<p>
+خدمة ممتازة والفني وصل بسرعة والتكييف رجع يبرد ممتاز.
+</p>
+</div>
+
+<div class="review">
+<h4>⭐⭐⭐⭐⭐</h4>
+<p>
+شغل محترم جدًا وتأسيس المواسير كان احترافي ونضيف.
+</p>
+</div>
+
+<div class="review">
+<h4>⭐⭐⭐⭐⭐</h4>
+<p>
+أفضل شركة تعاملت معاها في صيانة التكييفات.
+</p>
+</div>
+
+</div>
+
+</section>
+
 <section class="cta">
 
-<h2>احجز فني تكييف الآن</h2>
+<h2>
+احجز فني تكييف الآن
+</h2>
 
 <p>
-تواصل معنا الآن عبر واتساب وسيتم الرد عليك فورًا.
+
+تواصل معنا الآن عبر واتساب وسيتم الرد عليك بسرعة.
+
 </p>
 
 <a class="btn whatsapp"
 href="https://wa.me/201280288766?text=السلام عليكم اريد حجز فني تكييف">
+
 احجز الآن
+
 </a>
 
 </section>
